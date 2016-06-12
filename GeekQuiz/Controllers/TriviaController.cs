@@ -29,7 +29,7 @@ namespace GeekQuiz.Controllers
             Mapper.CreateMap<TriviaOption, OptionsModel>();
 
             var nextQ = Mapper.Map<TriviaQuestion, QuestionModel>(nextQuestion);
-
+            listQ.Add(nextQ);
             return listQ.ToList();
         }
 
